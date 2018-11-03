@@ -1,0 +1,5 @@
+Note.create(body: 'There was a tall cat.')
+Note.create(body: 'There was a fat frog.')
+Note.create(body: 'We had a nice lunch.')
+Note.create(body: 'Where is my hat?')
+Note.create(body: 'What time is the midnight buffet?')
