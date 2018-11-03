@@ -2482,3 +2482,490 @@ Processing by Api::V1::NotesController#index as */*
 Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 17:09:08 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 16ms (Views: 6.8ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 17:09:12 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-03 17:09:22 -0400
+Processing by Api::V1::NotesController#index as HTML
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-03 17:13:31 -0400
+Processing by Api::V1::NotesController#index as HTML
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 17:18:22 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 17:18:50 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/api/v1/notes" for 127.0.0.1 at 2018-11-03 17:18:53 -0400
+Processing by Api::V1::NotesController#create as */*
+  Parameters: {"note"=>{"body"=>"wsdfgh"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[36mNote Create (1.2ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "wsdfgh"], ["created_at", "2018-11-03 21:18:53.080604"], ["updated_at", "2018-11-03 21:18:53.080604"]]
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/api/v1/notes" for 127.0.0.1 at 2018-11-03 18:55:21 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::NotesController#create as */*
+  Parameters: {"note"=>{"body"=>"Larry came over."}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[36mNote Create (0.9ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "Larry came over."], ["created_at", "2018-11-03 22:55:21.824310"], ["updated_at", "2018-11-03 22:55:21.824310"]]
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 18:55:27 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (2.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/api/v1/notes" for 127.0.0.1 at 2018-11-03 18:55:34 -0400
+Processing by Api::V1::NotesController#create as */*
+  Parameters: {"note"=>{"body"=>"Watching TV"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[36mNote Create (0.7ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "Watching TV"], ["created_at", "2018-11-03 22:55:34.260292"], ["updated_at", "2018-11-03 22:55:34.260292"]]
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 18:55:51 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/v1/notes" for 127.0.0.1 at 2018-11-03 18:55:56 -0400
+Processing by Api::V1::NotesController#create as */*
+  Parameters: {"note"=>{"body"=>"Where is Jud"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[36mNote Create (0.4ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "Where is Jud"], ["created_at", "2018-11-03 22:55:56.224814"], ["updated_at", "2018-11-03 22:55:56.224814"]]
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 18:56:29 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (7.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 14ms (Views: 6.1ms | ActiveRecord: 7.7ms)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (148.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "notes-api_development"[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (144.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "notes-api_test"[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (416.6ms)[0m  [1m[35mCREATE DATABASE "notes-api_development" ENCODING = 'unicode'[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (316.8ms)[0m  [1m[35mCREATE DATABASE "notes-api_test" ENCODING = 'unicode'[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "notes" ("id" bigserial primary key, "body" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20181102170230)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-03 22:56:53.770534"], ["updated_at", "2018-11-03 22:56:53.770534"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35mSQL (0.4ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "notes" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE "notes" ("id" bigserial primary key, "body" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20181102170230)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-03 22:56:53.821116"], ["updated_at", "2018-11-03 22:56:53.821116"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2018-11-03 22:56:53.824667"], ["key", "environment"]]
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mNote Create (0.9ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "There was a tall cat."], ["created_at", "2018-11-03 22:56:53.863915"], ["updated_at", "2018-11-03 22:56:53.863915"]]
+  ↳ db/seeds.rb:1
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:2
+  [1m[36mNote Create (0.3ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "There was a fat frog."], ["created_at", "2018-11-03 22:56:53.866749"], ["updated_at", "2018-11-03 22:56:53.866749"]]
+  ↳ db/seeds.rb:2
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:2
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:3
+  [1m[36mNote Create (0.4ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "We had a nice lunch."], ["created_at", "2018-11-03 22:56:53.868578"], ["updated_at", "2018-11-03 22:56:53.868578"]]
+  ↳ db/seeds.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:4
+  [1m[36mNote Create (0.3ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "Where is my hat?"], ["created_at", "2018-11-03 22:56:53.870679"], ["updated_at", "2018-11-03 22:56:53.870679"]]
+  ↳ db/seeds.rb:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:5
+  [1m[36mNote Create (0.3ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "What time is the midnight buffet?"], ["created_at", "2018-11-03 22:56:53.872390"], ["updated_at", "2018-11-03 22:56:53.872390"]]
+  ↳ db/seeds.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:5
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 18:57:02 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 12ms (Views: 4.8ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/api/v1/notes" for 127.0.0.1 at 2018-11-03 18:56:51 -0400
+Processing by Api::V1::NotesController#create as */*
+  Parameters: {"note"=>{"body"=>"Pizz was good."}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[36mNote Create (1.0ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "Pizz was good."], ["created_at", "2018-11-03 22:56:51.213862"], ["updated_at", "2018-11-03 22:56:51.213862"]]
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 18:56:59 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:00:14 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:03:36 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:04:06 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:04:48 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 8ms (Views: 3.6ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:05:04 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:05:44 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/brad/.rvm/gems/ruby-2.4.4/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 13ms (Views: 5.0ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:07:39 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.2ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:07:55 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-03 19:08:53 -0400
+Processing by Api::V1::NotesController#index as HTML
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:09:05 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:09:23 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:14:19 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-03 19:15:32 -0400
+Processing by Api::V1::NotesController#index as HTML
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-03 19:15:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-03 19:15:47 -0400
+Processing by Api::V1::NotesController#index as HTML
+  [1m[36mNote Load (1.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:16:21 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.6ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 12ms (Views: 3.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:17:13 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:17:40 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (2.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:18:24 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.3ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:19:19 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (2.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:20:06 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:22:16 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (3.9ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:23:59 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.7ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:25:07 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.5ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:25:08 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (1.0ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:27:46 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:27:58 -0400
+Processing by Api::V1::NotesController#create as */*
+  Parameters: {"note"=>{"body"=>"asdf"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[36mNote Create (0.7ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "asdf"], ["created_at", "2018-11-03 23:27:58.331028"], ["updated_at", "2018-11-03 23:27:58.331028"]]
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:29:36 -0400
+Processing by Api::V1::NotesController#index as */*
+  [1m[36mNote Load (0.4ms)[0m  [1m[34mSELECT "notes".* FROM "notes"[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/v1/notes" for 127.0.0.1 at 2018-11-03 19:29:48 -0400
+Processing by Api::V1::NotesController#create as */*
+  Parameters: {"note"=>{"body"=>"Let's watch Columbo"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[36mNote Create (0.3ms)[0m  [1m[32mINSERT INTO "notes" ("body", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["body", "Let's watch Columbo"], ["created_at", "2018-11-03 23:29:48.610054"], ["updated_at", "2018-11-03 23:29:48.610054"]]
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/notes_controller.rb:14
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
