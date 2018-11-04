@@ -16,8 +16,8 @@ class Api::V1::NotesController < ApplicationController
 	end
 	
 	def update
-		@note = Note.find(params(:id))
-		@note = Note.update(note_params)
+		@note = Note.find(params[:id])
+		@note.update(note_params)
 		render json: @note, status: 200
 	end
 	
@@ -29,6 +29,6 @@ class Api::V1::NotesController < ApplicationController
 
 	private
 		def note_params
-			params.require(:note).permit(:body)
+			params.require(:note).permit(:id, :body)
 		end
 end
