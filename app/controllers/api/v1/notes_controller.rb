@@ -1,7 +1,7 @@
 class Api::V1::NotesController < ApplicationController
 
 	def index
-		@notes = Note.all
+		@notes = Note.all.sort {|a,b| a.id <=> b.id }
 		render json: @notes, status: 200
 	end
 	
@@ -26,7 +26,7 @@ class Api::V1::NotesController < ApplicationController
 		@note.delete
 		render json: {message: "note `#{@note.id}` deleted"}
 	end
-	
+
 	private
 		def note_params
 			params.require(:note).permit(:body)
