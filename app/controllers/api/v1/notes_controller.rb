@@ -1,7 +1,8 @@
 class Api::V1::NotesController < ApplicationController
 
 	def index
-		@notes = Note.all.sort {|a,b| a.id <=> b.id }
+		# @notes = Note.all.sort {|a,b| a.id <=> b.id }
+		@notes = Note.all
 		render json: @notes, status: 200
 	end
 	
@@ -29,6 +30,6 @@ class Api::V1::NotesController < ApplicationController
 
 	private
 		def note_params
-			params.require(:note).permit(:id, :body)
+			params.require(:note).permit(:body)
 		end
 end
