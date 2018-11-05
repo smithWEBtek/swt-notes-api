@@ -23,6 +23,8 @@ class Api::V1::NotesController < ApplicationController
 	end
 	
 	def destroy
+binding.pry
+
 		@note = Note.find(params(:id))
 		@note.delete
 		render json: {message: "note `#{@note.id}` deleted"}
